@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Shariff Wrapper
- * Plugin URI: https://wordpress.org/plugins-wp/shariff/
+ * Plugin Name: Shariff Wrapper (RDG version)
+ * Plugin URI: https://github.com/mdibella-dev/rdg-wordpress-shariff-wrapper
  * Description: Shariff provides share buttons that respect the privacy of your visitors and follow the General Data Protection Regulation (GDPR).
  * Version: 4.6.11
  * Author: Jan-Peter Lambeck & 3UU
@@ -1331,9 +1331,6 @@ function shariff3uu_render( $atts ) {
 					$output .= ' rel="';
 					if ( 'facebook' !== $service ) {
 						$output .= 'noopener ';
-					}
-					if ( 'info' !== $service ) {
-						$output .= 'nofollow';
 					}
 					$output .= '"';
 				}
